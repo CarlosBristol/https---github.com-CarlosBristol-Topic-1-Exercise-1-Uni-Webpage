@@ -3,13 +3,34 @@
     padding: 0;
 }
 
-li {
-    list-style-type: none;
-    background-color: black; 
-    color: white;
-    display: block;
-    width: 25%;
-    height: 76px;
+body {
+    font-size: 25px;
+    font-family: 'Noto Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: "header nav nav nav";
+    align-items: center;
+}
+
+header {
+    grid-area: header;
+    background-color: black;
+}
+
+nav {
+    background-color: black;
+    grid-area: nav;
+    padding: 25px;
+}
+
+nav li {
     float: left;
-    font-size: 30px;
+    width: 33%;
+}
+
+a {
+    background-color: black;
+    color: white;
+    text-decoration: none;
 }
