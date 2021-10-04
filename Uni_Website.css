@@ -9,7 +9,9 @@ body {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: auto;
-    grid-template-areas: "header nav nav nav";
+    grid-template-areas: "header nav nav nav"
+                         ". . . ."
+                         "main main main main";
     align-items: center;
 }
 
@@ -33,4 +35,16 @@ a {
     background-color: black;
     color: white;
     text-decoration: none;
+}
+
+main {
+    grid-area: main;
+    background-color: #EEEEEE;
+    margin-left: 150px;
+    padding: 30px;
+}
+
+.uni_pic {
+    width: 1200px;  
+    height: 400px;
 }
