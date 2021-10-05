@@ -22,19 +22,35 @@ header {
 
 nav {
     background-color: black;
-    grid-area: nav;
-    padding: 25px;
-}
-
-nav li {
-    float: left;
-    width: 33%;
-}
-
-a {
-    background-color: black;
     color: white;
-    text-decoration: none;
+    grid-area: nav;
+    padding: 1.95%;
+}
+
+nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+}
+
+nav > ul > li {
+    position: relative;
+}
+
+nav ul ul {
+    position: absolute;
+    background-color: #333;
+    padding: 0;
+    display: block;
+    width: 100%;
+    transform: translate(0, -150%);
+    transition: transform 0.5s ease-in;
+    z-index: 1;
+}
+
+nav > ul > li:hover ul {
+    transform: translate(0, 0);
 }
 
 main {
