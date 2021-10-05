@@ -11,7 +11,7 @@ body {
     grid-template-rows: auto;
     grid-template-areas: "header nav nav nav"
                          "main main main aside"
-                         "main main main aside";
+                         "footer footer footer footer";
     align-items: center;
 }
 
@@ -60,4 +60,11 @@ aside h1 {
 
 aside ul {
     list-style: none;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    width: 1688px;
 }
