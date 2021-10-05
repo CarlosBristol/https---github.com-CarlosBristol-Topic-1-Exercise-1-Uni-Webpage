@@ -49,6 +49,10 @@ main {
     height: 501px;
 }
 
+.content {
+    margin-left: 150px;
+}
+
 aside {
     background-color: #DDDDDD;
     font-size: 20px;
